@@ -1,5 +1,5 @@
 import NavBar from "./Components/NavBar";
-import AllClothingLandingPage from "./Components/AllClothingLandingPage";
+import AllClothingLandingPage from "./Components/AllClothesPage/AllClothingLandingPage";
 import HomeLandingPage from './Components/HomePage/HomeLandingPage'
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

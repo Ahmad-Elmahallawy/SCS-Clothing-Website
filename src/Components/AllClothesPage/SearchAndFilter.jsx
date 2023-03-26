@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaSearch, FaSort } from "react-icons/fa";
-import "../Styles/SearchAndFilterStyle.css";
+import "../../Styles/AllClothesPageStyles/SearchAndFilterStyle.css";
 
 const SearchAndFilter = () => {
   const [searchValue, setSearchValue] = useState();
