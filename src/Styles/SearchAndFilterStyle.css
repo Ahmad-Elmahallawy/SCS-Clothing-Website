@@ -35,7 +35,7 @@
   .dropdown button{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding-left: 5px;
     padding-right: 5px;
     background-color: white;
