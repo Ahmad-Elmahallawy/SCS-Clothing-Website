@@ -19,10 +19,11 @@ const SearchAndFilter = () => {
       </div>
       <div class="dropdown">
         <button>
-          <FaSort />
+          <FaSort color="rgb(112,0,0)"/>
           <p>Sort By</p>
         </button>
         <div class="dropdown-content">
+          <a>Default</a>
           <a>Lowest Price</a>
           <a>Highest Price</a>
         </div>

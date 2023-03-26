@@ -9,8 +9,7 @@
 
 :root {
 	--mainColor: rgb(112,0,0);
-	--mainColorLight: grey;
-	--secondaryColor: #db2b39;
+	--secondaryColor: grey;
 	--textColor: #eee;
 }
 

@@ -1,12 +1,19 @@
 import NavBar from "./Components/NavBar";
-import SearchAndFilter from "./Components/SearchAndFilter";
+import AllClothingLandingPage from "./Components/AllClothingLandingPage";
+import HomeLandingPage from './Components/HomeLandingPage'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <SearchAndFilter />
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/Home" element={<HomeLandingPage/>}/>
+          <Route path="/Clothing" element={<AllClothingLandingPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

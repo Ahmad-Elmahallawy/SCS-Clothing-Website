@@ -1,0 +1,51 @@
+.BannerAndTextContainer {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.RightSection {
+  width: 50%;
+  display: grid;
+  justify-content: center;
+}
+
+.RightTextSection {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.glow {
+  color: rgb(112, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.RightSectionBtns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.RightSectionBtns button {
+  background-color: rgb(112, 0, 0) !important;
+  border: 2px solid var(--mainColor);
+  border-radius: 5px;
+  width: 40%;
+  height: 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.RightSectionBtns button a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.RightSectionBtns button:hover {
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgba(112, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
