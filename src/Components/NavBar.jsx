@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa";
 import "../Styles/NavBarStyle.css";
 
 function Navbar() {
@@ -17,6 +17,8 @@ function Navbar() {
         <a href="/#">All Clothing</a>
         <a href="/#">Contact Us</a>
         <a href="/#">About Us</a>
+        <a href="/#">Register</a>
+        <a href="/#"> <FaShoppingCart style={{marginRight: '5px'}}/>  My Cart</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
