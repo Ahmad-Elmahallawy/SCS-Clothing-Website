@@ -6,7 +6,7 @@ const colors = [
   <img src="../Images/Banner1.png" alt="" />,
   <img src="../Images/Banner2.png" alt="" />,
   <img src="../Images/Banner3.png" alt="" />,
-  <img src="../Images/Banner3.png" alt="" />,
+  <img src="../Images/Banner4.png" alt="" />,
 ];
 const delay = 2500;
 
