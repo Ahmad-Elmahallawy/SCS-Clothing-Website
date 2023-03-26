@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import "../Styles/SlideshowStyle.css";
+import "../../Styles/HomePageStyles/SlideshowStyle.css";
 
 const colors = [
   <img src="../Images/Banner1.png" alt="" />,
@@ -8,7 +8,7 @@ const colors = [
   <img src="../Images/Banner3.png" alt="" />,
   <img src="../Images/Banner4.png" alt="" />,
 ];
-const delay = 2500;
+const delay = 4000;
 
 function Slideshow() {
   const [index, setIndex] = React.useState(0);
@@ -36,32 +36,30 @@ function Slideshow() {
   }, [index]);
 
   return (
-
-      <div className="slideshow">
-        <div
-          className="slideshowSlider"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        >
-          {colors.map((item, index) => (
-            <div className="slide" key={index}>
-              {item}
-            </div>
-          ))}
-        </div>
-
-        <div className="slideshowDots">
-          {colors.map((_, idx) => (
-            <div
-              key={idx}
-              className={`slideshowDot${index === idx ? " active" : ""}`}
-              onClick={() => {
-                setIndex(idx);
-              }}
-            ></div>
-          ))}
-        </div>
+    <div className="slideshow">
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {colors.map((item, index) => (
+          <div className="slide" key={index}>
+            {item}
+          </div>
+        ))}
       </div>
 
+      <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
   );
 }
 

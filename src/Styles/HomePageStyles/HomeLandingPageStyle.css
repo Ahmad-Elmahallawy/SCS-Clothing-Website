@@ -26,7 +26,7 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
 }
 .RightSectionBtns button {
   background-color: rgb(112, 0, 0) !important;
@@ -48,4 +48,20 @@
   box-shadow: 0px 15px 20px rgba(112, 0, 0, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+
+.HomePageSubtitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+    color: #eee;
+}
+
+.productsSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
