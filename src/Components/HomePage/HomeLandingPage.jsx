@@ -4,7 +4,7 @@ import "../../Styles/HomePageStyles/HomeLandingPageStyle.css";
 import OurProductsSection from "./OurProductsSection";
 import { Link } from "react-router-dom";
 import SocialMediaArray from "./SocialMediaArray";
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+import SignUpLandingPage from "../SignUpPage/SignUpLandingPage";
 
 const HomeLandingPage = () => {
   return (
@@ -53,9 +53,7 @@ const HomeLandingPage = () => {
         <h1>Follow Us On Social Media</h1>
       </div>
       <SocialMediaArray />
-      <MDBBtn className="m-1" style={{ backgroundColor: "#3b5998" }} href="#">
-        <MDBIcon fab icon="facebook-f" />
-      </MDBBtn>
+
     </div>
   );
 };
