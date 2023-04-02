@@ -15,14 +15,14 @@ function Navbar() {
       <img src="../Images/SCSLogo.png" alt="" />
       <nav ref={navRef}>
         <a>
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
         </a>
         <a>
           <Link to="/Clothing">All Clothing</Link>
         </a>
         <a href="/#">Contact Us</a>
         <a href="/#">About Us</a>
-        <a href="/#">Log In</a>
+        <a><Link to="/Log-In">Log In</Link></a>
         <a href="/#">
           {" "}
           <FaShoppingCart style={{ marginRight: "5px" }} /> 

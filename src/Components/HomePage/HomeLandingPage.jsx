@@ -53,7 +53,6 @@ const HomeLandingPage = () => {
         <h1>Follow Us On Social Media</h1>
       </div>
       <SocialMediaArray />
-
     </div>
   );
 };

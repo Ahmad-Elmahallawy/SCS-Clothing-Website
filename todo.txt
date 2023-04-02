@@ -1,0 +1,4 @@
+Registration:
+    - Login with Google
+    - Implement Logout functionality
+    - using bcrypt to check if password is the same in logging in
