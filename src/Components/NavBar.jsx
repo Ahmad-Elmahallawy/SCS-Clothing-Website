@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="/Clothing">All Clothing</Link>
         </a>
         <a href="/#">Contact Us</a>
-        <a href="/#">About Us</a>
+        <a href="/">About Us</a>
         <a><Link to="/Log-In">Log In</Link></a>
         <a href="/#">
           {" "}

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-import '../../Styles/SignUpStyles/SignUp.css'
+import "../../Styles/RegistrationStyles/RegistrationStyle.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const SignUpLandingPage = () => {
   const [data, setData] = useState({
@@ -34,24 +35,16 @@ const SignUpLandingPage = () => {
   };
 
   return (
-    <div className="signup_container">
-      <div className="signup_form_container">
-        <div className="left">
-          <h1>Welcome Back</h1>
-          <Link to="/Log-In">
-            <button type="button" className="white_btn">
-              Sing in
-            </button>
-          </Link>
-        </div>
-        <div className="right">
-          <form
-            className="form_container"
-            action="/register"
-            method="post"
-            onSubmit={handleSubmit}
-          >
-            <h1>Create Account</h1>
+    <div className="container">
+      <div className="form-and-title-container">
+        <h2>Create Account</h2>
+        <form
+          className="form_container"
+          action="/register"
+          method="post"
+          onSubmit={handleSubmit}
+        >
+          <div>
             <input
               type="text"
               placeholder="First Name"
@@ -61,6 +54,8 @@ const SignUpLandingPage = () => {
               required
               className="input"
             />
+          </div>
+          <div>
             <input
               type="text"
               placeholder="Last Name"
@@ -70,6 +65,9 @@ const SignUpLandingPage = () => {
               required
               className="input"
             />
+          </div>
+          <div>
+            {" "}
             <input
               type="email"
               placeholder="Email"
@@ -79,6 +77,9 @@ const SignUpLandingPage = () => {
               required
               className="input"
             />
+          </div>
+          <div>
+            {" "}
             <input
               type="password"
               placeholder="Password"
@@ -88,12 +89,15 @@ const SignUpLandingPage = () => {
               required
               className="input"
             />
+          </div>
 
-            <button type="submit" className="green_btn">
-              Sign Up
-            </button>
-          </form>
-        </div>
+          <button type="submit" className="green_btn">
+            Sign Up
+          </button>
+          <span>
+            Already have an account ?<Link to="/Log-In"> Login</Link>
+          </span>
+        </form>
       </div>
     </div>
   );

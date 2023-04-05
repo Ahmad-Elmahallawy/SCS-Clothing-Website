@@ -28,10 +28,10 @@ passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
 app.use(bodyParser.json()).use(cors());
-
 // routes
 require("./routes/SignUpRoute")(app);
 
-app.listen(4000, function () {
-  console.log("server is running on port 4000");
+const port = process.env.SERVER_PORT;
+app.listen(port, function () {
+  console.log(`server is running on port ${port}`);
 });
