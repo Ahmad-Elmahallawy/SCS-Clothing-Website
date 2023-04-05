@@ -10,7 +10,6 @@ const LogInLandingPage = () => {
         <h2>Login to your Account</h2>
         <form>
           <div>
-            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
@@ -21,7 +20,6 @@ const LogInLandingPage = () => {
             />
           </div>
           <div>
-            <label htmlFor="password">Password</label>
             <input
               type="password"
               placeholder="Password"
