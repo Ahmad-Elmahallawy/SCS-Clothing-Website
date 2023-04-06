@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import "../../Styles/RegistrationStyles/RegistrationStyle.css";
 import { ToastContainer, toast } from "react-toastify";
 
 const SignUpLandingPage = () => {
+  const navigate = useNavigate()
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -18,7 +19,8 @@ const SignUpLandingPage = () => {
     setData({ ...data, [input.name]: input.value });
   };
 
-  const handleSubmit = (e) => {
+  let name;
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const reg = {
@@ -28,9 +30,15 @@ const SignUpLandingPage = () => {
       password: data.password,
     };
 
-    axios
-      .post("http://localhost:4000/api/register", reg)
-      .then((response) => console.log(response))
+ 
+    await axios
+      .post("http://localhost:4000/api/register", reg, {withCredentials: true})
+      .then((response) => {
+        console.log(response)
+        name = response.data.data.firstName
+        console.log(name)
+        navigate("/")
+      })
       .catch((err) => console.log(err.response.data));
   };
 
@@ -90,7 +98,6 @@ const SignUpLandingPage = () => {
               className="input"
             />
           </div>
-
           <button type="submit" className="green_btn">
             Sign Up
           </button>
